@@ -1,52 +1,40 @@
-import copy
-# Create a class.
 
 class Recall:
-    # Use __init__ to hold an empty list(datatype).
     def __init__(self, myList=[]):
-        self.myList = myList
-        # if myList is None:
-        #     myList = []
-        #     print(myList, 'line 9')
+        self.myList = []
 
     def __str__(self):
         return str(self.myList)
+    
+    def addNum(self, input):
+        self.myList.append(input)
 
-# Create a function or functions that will allow you to add one of each of the following 
-# datatypes to your list: number,string,dictionary,tuple.
+    def addStr(self, input):
+        self.myList.append(input)
 
+    def addDict(self, input):
+        self.myList.append(input)
 
-# def addToList(input):
-#     data = str(input)
-#     Recall.myList.append(data)
+    def addTuple(self, input):
+        self.myList.append(input)
 
-# addToList(input(int(40)))
-# addToList(input('hello'))
-# addToList(input(dict({'item':'coffee'})))
-# addToList(input(tuple(['why', 'cant', 'I', 'remember', 'python'])))
+    def printList(self):
+        print(self.myList)
 
+    def changeList(self):
+        print(tuple(self.myList))
+    
 
-def addNum(input):
-    data = str(input)
-    Recall.myList.append(data)
+var = Recall()
 
-addNum(input(int(40)))
+var.addNum(40)
 
+var.addStr('hello')
 
-def addStr(input):
-    data2 = str(input)
-    Recall.myList.append(data2)
+var.addDict({'item':'coffee'})
 
-addStr(input('hello'))
+var.addTuple(('why', 'cant', 'I', 'remember', 'python'))
 
-def addDict(input):
-    data3 = str(input)
-    Recall.myList.append(data3)
+var.printList()
 
-addDict(input(dict({'item':'coffee'})))
-
-def addTuple(input):
-    data4 = str(input)
-    Recall.myList.append(data4)
-
-addTuple(input(tuple(['why', 'cant', 'I', 'remember', 'python'])))
+var.changeList()
