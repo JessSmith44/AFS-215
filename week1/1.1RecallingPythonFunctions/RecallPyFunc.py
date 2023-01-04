@@ -31,7 +31,7 @@ var.addNum(40)
 
 var.addStr('hello')
 
-var.addDict(dict({'item':'coffee'}))
+var.addDict({'item':'coffee'})
 
 var.addTuple(('why', 'cant', 'I', 'remember', 'python'))
 
