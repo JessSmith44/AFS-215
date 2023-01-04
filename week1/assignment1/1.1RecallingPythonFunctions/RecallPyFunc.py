@@ -3,11 +3,11 @@ import copy
 
 class Recall:
     # Use __init__ to hold an empty list(datatype).
-    def __init__(self, myList=None):
+    def __init__(self, myList=[]):
         self.myList = myList
-        if myList is None:
-            myList = []
-            print(myList, 'line 9')
+        # if myList is None:
+        #     myList = []
+        #     print(myList, 'line 9')
 
     def __str__(self):
         return str(self.myList)
