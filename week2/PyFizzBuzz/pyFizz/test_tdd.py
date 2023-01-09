@@ -37,3 +37,11 @@ def test_numChoiceFive():
 def test_numChoiceFives():
     # assert 22 % 3 == 0
     assert 27 % 3 == 0
+
+
+def test_numChoiceDoub():
+    # assert 7 % 3 == 0
+    # assert 56 % 5 == 0
+
+    assert 15 % 3 == 0
+    assert 15 % 5 == 0
