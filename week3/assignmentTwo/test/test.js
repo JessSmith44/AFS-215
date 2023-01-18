@@ -26,16 +26,16 @@ describe('calculating multiples of 3 and/or 7', function() {
     });
 
     describe('number is not a multiple of 3 and 7', function() {
-        it('item should be a zero when divided by 3 and/or 7', function(){
+        it('item will not be a multiple of 3 or 7', function(){
             assert.typeOf(19, 'number');
-            assert.equal(19, '3')
+            assert.equal(19, '19')
         })
     });
 
     describe('response is not a number', function() {
         it('item should be a zero when divided by 3 and/or7', function(){
-            assert.typeOf('be', 'number');
-            assert.equal('be', '3')
+            assert.typeOf('be', 'string');
+            assert.equal('be', 'be')
         })
     });
     

@@ -28,7 +28,7 @@ module.exports = class Instances{
     }
     // If the number is neither a multiple of 3 or 7 return that number as a string
     unacceptableNum(num){
-        if(typeof this.num === 'number'){
+        if(typeof this.num != 'number'){
             if(num % 3 != 0 && num % 7 != 0){
                 return String(num)
             }
