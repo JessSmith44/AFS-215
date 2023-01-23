@@ -33,7 +33,7 @@ describe('calculating multiples of 3 and/or 7', function() {
     });
 
     describe('response is not a number', function() {
-        it('item should be a zero when divided by 3 and/or7', function(){
+        it('item should not be a zero when divided by 3 and/or7', function(){
             assert.typeOf('be', 'string');
             assert.equal('be', 'be')
         })
