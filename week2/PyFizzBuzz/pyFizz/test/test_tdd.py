@@ -1,35 +1,38 @@
 from myLib.main import theFizz
 
 def test_numChoice():
-    assert theFizz(1)
+    result = theFizz(1)
+    assert result == 1
     
 def test_numChoiceG():
-    assert theFizz(2)
-
+    result = theFizz(2)
+    assert result == 2
 
 def test_numChoiceD():
-    assert theFizz(3)
-
+    result = theFizz(3)
+    assert result == 'Pepsi'
 
 def test_twoNumsP():
-    assert theFizz(9)
-
+    result = theFizz(9)
+    assert result == 'Pepsi'
+    # assert theFizz(9)
 
 def test_twoNumsV():
-    assert theFizz(15)
-
+    result = theFizz(15)
+    assert result == 'PepsiCoke'
 
 def test_numChoice():
-    assert theFizz(10)
-
+    result = theFizz(10)
+    assert result == 'Coke'
 
 def test_numChoiceFive():
-    assert theFizz(21)
-    
+    result = theFizz(21)
+    assert result == 'Pepsi'    
 
 def test_numChoiceFives():
-    assert theFizz(27)
-
+    result = theFizz(27)
+    assert result == 'Pepsi'
 
 def test_numChoiceDoub():
-    assert theFizz(15)
+    result = theFizz(30)
+    assert result == 'PepsiCoke'
