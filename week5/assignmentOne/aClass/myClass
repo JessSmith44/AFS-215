@@ -1,0 +1,25 @@
+# Create a class and create functions that can accomplish the following:
+
+class aRandomList():
+    # Hint: creating a state within your class using def __init__ can make 
+    # your list easier to manage.
+    def __init__(self):
+        self.list = ['Yarn', 'Stuffed animal', 'Sandwich']
+    
+    # Place a string into a list
+
+    # def addToList(self, itemName):
+    #     self.list.append(itemName)
+    #     print(self.list)
+    #     return self.list
+
+    # Search the list for a single instance of a string
+
+    def searchItem(self, itemName):
+        if 'Yarn' in self.list:
+            return 'Yarn'
+
+    # Evaluate all items in the list
+
+    # def evaluate(self):
+    #     pass
