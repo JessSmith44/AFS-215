@@ -37,7 +37,7 @@ module.exports = class Instances{
     // If any data type other than a number is passed return an error message.
     notANum(num){
         if(typeof this.num === isNaN(num)){
-            return "Error, that is not a number! Please try again!"
+           return "Error, that is not a number! Please try again!"
         }
     }
 }
